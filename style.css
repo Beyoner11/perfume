@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color:hsl(30,38%,92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card{
+  display: flex;
+  justify-items: center ;
+  align-items: center;
+  height:660px;
+  width: 430px;
+}
+.content{
+  background-color :#fff;
+  height: 330px;
+  width: 215px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+}
+.product-img{
+  background:url("image-product-desktop.jpg") no-repeat;
+  background-size: cover;
+  width: 215px;
+  height:330px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.lead-text{
+  color:hsl(212, 21%,14%);
+  margin: 20px 0 10px;
+}
+.main{
+  color:hsl(212, 21%,14%);
+  margin-bottom: 15px;
+  width: 150px;
+}
+p{
+  color:hsl(228, 12%,48%) ;
+  font-size:12px;
+  margin-bottom: 18px;
+  width: 170px;
+}
+.price{
+  color:hsl(158,36%,37%);
+  margin-bottom: 15px;
+}
+small{
+  color:hsl(228,21%,48%);
+  font-weight: 500;
+  font-size: 10px;
+  text-decoration: line-through;
+}
+.cart{
+  width:20px;
+  height:20px;
+}
+button{
+  padding: 10px 40px;
+  border:none;
+  background-color:#114411;
+  color:#fff;
+  border-radius:5px;
+  display:flex;
+  justify-items: center;
+  align-items: center;
+  gap:5px ;
+}
+
+@media all and (max-width: 768px) {
+  body{
+    margin-top: 10vh;
+  }
+  .card{
+    flex-direction: column;
+  }
+  .product-img{
+    border-radius: 0;
+    background-image: url("image-product-mobile.jpg");
+    width: 90vw;
+    height:200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .content{
+    border-radius: 0;
+    width:90vw;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 345px;
+ }
+  .main{
+    font-size: 30px;
+    width:270px;
+    font-family: serif;
+  }
+  p{
+    font-size: 16px;
+    width:280px;
+  }
+  button{
+    padding: 15px 95px;
+    background-color:hsl(158, 36%,37%);
+  }
+}
+
+

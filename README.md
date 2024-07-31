@@ -1,1 +1,1 @@
-# perfume
+This is a project gotten from Frontend Mentors to build a responsive perfume catalog 
